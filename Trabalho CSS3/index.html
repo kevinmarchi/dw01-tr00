@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabalho CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/430f334a59.js"></script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -27.210507, lng: -49.644572 },
+                zoom: 15
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgmq31lS1NGzJ0yAYPKuVsVzu8JmNClYc&callback=initMap" async defer></script>
+</head>
+
+<body>
+    <main class="main">
+        <header>
+            <img src="Imagens-icones/imagem6.png" alt="Logo da empresa">
+        </header>
+
+        <nav>
+            <a class="menu" href="#home">Home</a>
+            <a class="menu" href="#Produtos">Produtos</a>
+            <a class="menu" href="#Orcamento">Orçamento</a>
+        </nav>
+
+        <section class="main-card">
+            <div class="card">
+                <img src="Imagens-icones/imagem1.jpg" alt="placa de video">
+                <div class="icons">
+                    <i class="fas fa-heart icon heart"></i>
+                    <i class="fas fa-bookmark icon flag"></i>
+                    <i class="fas fa-share-alt icon share"></i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagens-icones/imagem2.jpg" alt="processador">
+                <div class="icons">
+                    <i class="fas fa-heart icon heart"></i>
+                    <i class="fas fa-bookmark icon flag"></i>
+                    <i class="fas fa-share-alt icon share"></i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagens-icones/imagem3.jpg" alt="memória ram">
+                <div class="icons">
+                    <i class="fas fa-heart icon heart"></i>
+                    <i class="fas fa-bookmark icon flag"></i>
+                    <i class="fas fa-share-alt icon share"></i>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="map-form">
+            <div id="map"></div>
+            <form>
+                <h2>Contato</h2>
+                <input type="text" placeholder="Nome:" required="required">
+                <input type="email" placeholder="E-mail:" required="required">
+                <textarea name="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                <input class="button" type="submit" value="Enviar">
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img class="f-image" src="Imagens-icones/imagem5.png" alt="logo">
+        <div class="f-links">
+            <a class="f-button" href="https://www.kabum.com.br/">Site</a>
+            <a class="f-button" href="https://www.kabum.com.br/hardware/placa-de-video-vga">Placas de vídeo</a>
+            <a class="f-button" href="https://www.kabum.com.br/hardware/processadores">Processadores</a>
+            <a class="f-button" href="https://www.kabum.com.br/hardware/memoria-ram">Memória RAM</a>
+        </div>
+        <div class="f-fim">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis diam in orci rhoncus, quis
+                tincidunt
+                enim sodales. Donec posuere id orci et sollicitudin. Pellentesque vel interdum purus. Phasellus
+                ultricies et
+                nisl in posuere. Quisque elementum ornare ligula porttitor pretium. Nunc eleifend tortor ac libero
+                mollis
+                porttitor. Morbi quis pharetra felis. Nunc ac porttitor libero, a ullamcorper diam.</p>
+            <p>In vestibulum quam ac sem tristique, id sollicitudin lorem interdum. Proin cursus eros vitae arcu dictum
+                posuere. Pellentesque vehicula maximus vestibulum. Quisque a pellentesque neque, nec consequat elit.
+                Curabitur aliquet orci eget enim fermentum posuere eget vitae metus. Phasellus gravida malesuada nulla a
+                iaculis. Donec eu massa vitae tellus vulputate porttitor id id sapien. Quisque placerat rhoncus odio,
+                non iaculis massa dictum faucibus. Curabitur vulputate accumsan tempor. Orci varius natoque penatibus et
+                magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nisl lectus, interdum sed nulla eget,
+                mattis sodales augue. Ut purus orci, bibendum efficitur fringilla a, aliquet id elit. Pellentesque
+                habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sodales eleifend
+                pharetra.</p>
+            <p class="f-finalizacao"> &copy; Kevin Marchi 2019 <a
+                    href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" /></a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="espaco"></div>
+
+</body>
+
+</html>
