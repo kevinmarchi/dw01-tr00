@@ -18,7 +18,22 @@
             });
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgmq31lS1NGzJ0yAYPKuVsVzu8JmNClYc&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgmq31lS1NGzJ0yAYPKuVsVzu8JmNClYc&callback=initMap"
+        async defer></script>
+    <script>
+        var cor = 0
+        function trocaCor(e, valorCor) {
+            if (cor == 0) {
+                e.style.color = valorCor
+                cor = 1
+            }
+            else {
+                e.style.color = 'black'
+                cor = 0
+            }
+        }
+
+    </script>
 </head>
 
 <body>
@@ -37,25 +52,25 @@
             <div class="card">
                 <img src="Imagens-icones/imagem1.jpg" alt="placa de video">
                 <div class="icons">
-                    <i class="fas fa-heart icon heart"></i>
-                    <i class="fas fa-bookmark icon flag"></i>
-                    <i class="fas fa-share-alt icon share"></i>
+                    <i class="fas fa-heart icon heart" onclick="trocaCor(this,'rgb(255, 0, 0)')"></i>
+                    <i class="fas fa-bookmark icon flag" onclick="trocaCor(this,'rgb(236, 118, 8)')"></i>
+                    <i class="fas fa-share-alt icon share" onclick="trocaCor(this,'rgb(3, 85, 3)')"></i>
                 </div>
             </div>
             <div class="card">
                 <img src="Imagens-icones/imagem2.jpg" alt="processador">
                 <div class="icons">
-                    <i class="fas fa-heart icon heart"></i>
-                    <i class="fas fa-bookmark icon flag"></i>
-                    <i class="fas fa-share-alt icon share"></i>
+                    <i class="fas fa-heart icon heart" onclick="trocaCor(this,'rgb(255, 0, 0)')"></i>
+                    <i class="fas fa-bookmark icon flag" onclick="trocaCor(this,'rgb(236, 118, 8)')"></i>
+                    <i class="fas fa-share-alt icon share" onclick="trocaCor(this,'rgb(3, 85, 3)')"></i>
                 </div>
             </div>
             <div class="card">
                 <img src="Imagens-icones/imagem3.jpg" alt="memória ram">
                 <div class="icons">
-                    <i class="fas fa-heart icon heart"></i>
-                    <i class="fas fa-bookmark icon flag"></i>
-                    <i class="fas fa-share-alt icon share"></i>
+                    <i class="fas fa-heart icon heart" onclick="trocaCor(this,'rgb(255, 0, 0)')"></i>
+                    <i class="fas fa-bookmark icon flag" onclick="trocaCor(this,'rgb(236, 118, 8)')"></i>
+                    <i class="fas fa-share-alt icon share" onclick="trocaCor(this,'rgb(3, 85, 3)')"></i>
                 </div>
             </div>
         </section>
